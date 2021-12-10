@@ -1,0 +1,18 @@
+mutation CreateOrder($order: OrderCreateInput!) {
+	createOneOrder(data: $order) {
+		id
+		email
+		subtotal
+		tax
+		total
+		created
+		items {
+			id
+			price
+			product {
+				id
+				name
+			}
+		}
+	}
+}

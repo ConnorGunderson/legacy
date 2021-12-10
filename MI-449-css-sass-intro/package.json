@@ -1,0 +1,23 @@
+{
+  "name": "mi-449-css-sass-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch styles/scss/source/:styles/css/compiled/ --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConnorGunderson/MI-449-css-sass-intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConnorGunderson/MI-449-css-sass-intro/issues"
+  },
+  "homepage": "https://github.com/ConnorGunderson/MI-449-css-sass-intro#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}

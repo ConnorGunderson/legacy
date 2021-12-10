@@ -1,0 +1,14 @@
+{
+  "name": "MI-449-js-localstorage",
+  "version": "1.0.0",
+  "scripts": {
+    "sass": "sass --watch styles/scss/:styles/css/ --style compressed"
+  },
+  "main": "index.js",
+  "repository": "https://github.com/ConnorGunderson/MI-449-js-localstorage.git",
+  "author": "Connor Gunderson <gundydev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dart-sass": "^1.25.0"
+  }
+}

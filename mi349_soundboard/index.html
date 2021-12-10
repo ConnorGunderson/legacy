@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundBoard Lab</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="flex-container"  id="soundboard">
+            <div>
+                <h1>Sounds of <span id="nintendo">Nintendo</span></h1>
+            </div>
+            <div>
+                <button id='ring'>
+                    <audio src="./src/sounds/ring.mp3"></audio>
+                </button>
+                
+                <button id='oneUp'>
+                    <audio src="./src/sounds/1up.mp3"></audio>
+                </button>
+            </div>
+            <div>
+                <button id='warp'>
+                    <audio src="./src/sounds/warp.mp3"></audio>
+                </button>
+                <button id='spring'>
+                    <audio src="./src/sounds/spring.mp3"></audio>
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- Optional Javascript -->
+    <script src="./src/scripts/soundboard.js"></script>
+</body>
+</html>

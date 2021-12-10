@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  line-height: 1.15;
+  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header h1 span {
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main h1 {
+  font-size: 70px;
+}
+
+#main #auth {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2px;
+}
+
+#main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+}
+
+section div {
+  padding: 20px;
+  border: 1px solid #d4dada;
+  border-radius: 3px;
+  width: 100%;
+}
+
+a {
+  margin-top: 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 14px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11),
+    0 1px 3px rgba(0, 0, 0, .08);
+  background: #fff;
+  outline: 0;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .025em;
+  color: #6772e5;
+  text-decoration: none;
+  transition: all .15s ease;
+}
+
+a:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 7px 14px rgba(50, 50, 93, .1), 0 3px 6px rgba(0, 0, 0, .08);
+}
+
+a:active {
+  background-color: #f6f9fc;
+  transform: translateY(1px);
+  box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+}
+
+section input {
+  width: 100%;
+  height: 38px;
+  padding: 6px 10px;
+  background-color: #fff;
+  border: 1px solid #d4dada;
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  vertical-align: bottom;
+}
+
+section input:focus {
+  border: 1px solid #07682c;
+  outline: 0;
+}
+
+/*  If I were to style every span individually 
+      in css I would do this for all of them 
+    This would be easier with a css preprocessor like less or scss
+
+spanElement:hover {
+  color: #RANDOM;
+}
+
+*/

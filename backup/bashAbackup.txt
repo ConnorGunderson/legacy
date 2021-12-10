@@ -1,0 +1,35 @@
+# exit console
+alias e="exit"
+
+# edit bash_aliases
+alias gba="gedit ~/.bash_aliases"
+
+# custom PS1
+alias psC="PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\[\033[00m\]~\$ '"
+
+# Default PS1
+alias psD="PS1='\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '"
+
+# default audio
+alias audD="pactl set-default-sink 'alsa_output.pci-0000_00_1f.3.analog-stereo'"
+
+# scarlett audio
+alias audS="pactl set-default-sink 'alsa_output.usb-Focusrite_Scarlett_Solo_USB-00.analog-stereo'"
+
+# system update
+alias supd="sudo apt update -y"
+
+# system upgrade
+alias supg="sudo apt upgrade -y"
+
+# system settings
+alias gset="gnome-control-center"
+
+# find LISTEN port and process running it, then KILL it
+alias fp='netstat -tulpn'
+
+# check if firewall is active
+alias fw='sudo ufw status'
+
+# if you ever fuck up mongodb
+alias plsbro='sudo systemctl unmask mongodb'

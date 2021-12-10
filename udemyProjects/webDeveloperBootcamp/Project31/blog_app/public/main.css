@@ -1,0 +1,15 @@
+i {
+    font-size: 2em;
+}
+
+.container.main {
+    margin-top: 7em;
+}
+
+a {
+    display:inline;
+}
+
+.main {
+    margin-top: 7em !important;
+}

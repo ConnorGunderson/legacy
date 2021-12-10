@@ -1,0 +1,41 @@
+@import '_variables';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: $base-font-size;
+  background-color: $color-one;
+  font-family: $base-font-family;
+}
+
+@mixin table-anchor-styles {
+  color: $color-four;
+  padding: 10px;
+  &:hover {
+    color: $color-two;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  tr,
+  th,
+  td {
+    @include table-anchor-styles();
+    border: 1px solid black;
+  }
+}
+a {
+  @include table-anchor-styles();
+}
+
+img,
+input,
+textarea {
+  border-radius: $base-border-radius;
+}
+
+h1 {
+  color: lighten($color-three, 50);
+}

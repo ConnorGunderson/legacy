@@ -1,0 +1,178 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.6rem;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header {
+  height: 20vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/doom-header.jpg');
+  background-position: 0% 50%;
+  background-size: cover;
+}
+
+.header h1 {
+  margin-top: 0;
+  padding: 20px;
+  text-align: center;
+  color:white;
+  font-size: 60px;
+}
+
+.nav {
+  color: white;
+  background-color: black;
+  opacity: 70%;
+  display: flex;
+}
+
+.nav a {
+  padding: 1rem;
+  transition: 150ms ease-in-out opacity;
+  cursor: pointer;
+}
+
+.nav a:hover {
+  opacity: 50%;
+}
+
+.main {
+  height: 70vh;
+  padding: 4rem;
+}
+
+.home {
+  position: relative;
+  height:100%;
+  width: 100%;
+}
+
+.flex-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.h2-header {
+  text-align: center;
+  font-size: 32px;
+}
+
+.grid {
+  display: inline-grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows:  33% 33% 33% ;
+}
+
+
+.grid * {
+  font-size: .75rem;
+  padding: 5px;
+  overflow: scroll;
+}
+
+.home-1 {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 80%;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.h-full {
+  height: 100%;
+  overflow: scroll;
+}
+.w-full {
+  width: 100%;
+}
+
+.home-1 a {
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  width: 15rem;
+  height: 25rem;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .2);
+  background-size: cover;
+  background-color: black; 
+  background-position: center;
+  transition: opacity, box-shadow, 150ms ease-in-out;
+}
+
+.home-1 a:hover {
+  opacity: 80%;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, .4);
+}
+
+.icon-of-sin {
+  background-image: url("./images/icon-of-sin.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.tyrant {
+  background-image: url("./images/tyrant.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.marauder {
+  background-image: url("./images/marauder.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.row {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.col * {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  background-color: black;
+  opacity: 70%;
+  color:white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .header h1 {
+    font-size: 32px;
+  }
+
+  .h2-header {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 50% 50%;
+  }
+}

@@ -1,0 +1,12 @@
+$dark: #5f5f5f;
+$light: white;
+
+@mixin night-themes {
+  color:$light;
+  background-color: $dark;
+}
+
+@mixin day-themes {
+  color:$dark;
+  background-color: $light;
+}

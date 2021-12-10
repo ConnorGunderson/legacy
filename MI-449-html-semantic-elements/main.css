@@ -1,0 +1,131 @@
+/* globals */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 360px;
+  font-family: '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;';
+  scroll-behavior: smooth;
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ff5d5d;
+  transition: color 150ms linear;
+}
+
+a:hover {
+  color: #fc9e9e;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+::selection {
+  background: #ff5d5d;
+  color: #fefefe;
+}
+
+/* classes */
+
+.header {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  min-height: 10vh;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebe8e8;
+}
+
+.header .brand {
+  font-size: 32px;
+}
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.header ul * {
+  padding: .5rem;
+}
+
+.main {
+  width: 70%;
+  min-height: 75vh;
+  margin: 0 auto;
+}
+
+.main .article-container {
+  margin: 1rem;
+  padding: .5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #ebe8e8;
+}
+
+.main .article-sub {
+  padding: .5rem;
+  display: flex;
+  width: 90%;
+  margin: .25rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.main .article-sub * {
+  padding: .25rem;
+}
+
+.main figure {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main .sub-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.main aside {
+  text-align: center;
+}
+
+.footer {
+  background-color: #ff5d5d;
+  min-height: 15vh;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* breakpoints */
+
+@media (max-width: 834px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .header ul {
+    flex-direction: column;
+  }
+}

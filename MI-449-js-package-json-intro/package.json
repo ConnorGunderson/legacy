@@ -1,0 +1,29 @@
+{
+  "name": "MI-449-js-package-json-intro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev:sass": "dart-sass --watch scss/styles.scss:css/styles.css --style=compressed",
+    "dev:server": "live-server",
+    "dev": "run-p dev:*",
+    "build:lint:html": "htmlhint **/*.html",
+    "build:lint:css": "stylelint **/*.scss",
+    "build:lint:js": "standard clicky.js",
+    "build:sass": "dart-sass scss/styles.scss:css/styles.css --style=compressed",
+    "deploy:surge": "surge --project . --domain https://connorgunderson-js-package-jso.surge.sh/",
+    "deploy": "run-s build:* deploy:surge"
+  },
+  "repository": "https://github.com/ConnorGunderson/MI-449-js-package-json-intro.git",
+  "author": "connorgunderson <gundydev@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "htmlhint": "^0.14.2",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5",
+    "standard": "^16.0.3",
+    "stylelint": "^13.12.0",
+    "stylelint-config-standard": "^21.0.0",
+    "surge": "^0.23.0"
+  }
+}

@@ -1,0 +1,15 @@
+
+.page-fade {
+  animation: page-fade 250ms linear ;
+}
+
+@keyframes page-fade {
+  from {
+    transform: translate3d(5px, -5px, 0);
+    opacity: 25%;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 100%;
+  }
+}

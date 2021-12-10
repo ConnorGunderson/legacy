@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  position: relative;
+  color: #2f353f;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif, Source Sans Pro;
+  scroll-behavior: smooth;
+}
+
+#__next {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 100ms linear;
+}
+
+a:hover {
+  color: #767e8b;
+}
+
+* {
+  list-style: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  @apply px-2
+}
+
+.skills h3 {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.skills div div {
+  padding-top: 1rem;
+}
+
+.projectNav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms linear;
+}
+.projectNav a:hover {
+  transform: scale(105%);
+}
+a:focus, button:focus {
+  outline: 0;
+  @apply ring-2 ring-purple-300
+}
+
+.contactForm {
+  @apply w-5/6 md:w-3/4 lg:w-3/5 h-3/4 mx-auto my-4
+}
+
+.contactForm div {
+  width: 400px;
+  @apply flex flex-col mx-auto my-1
+}
+.contactForm input {
+  @apply w-full
+}
+
+.contactForm textarea, .contactForm input {
+  @apply p-1 mt-1 focus:ring-2 focus:ring-purple-700 transition-all border border-purple-700 rounded-sm
+}

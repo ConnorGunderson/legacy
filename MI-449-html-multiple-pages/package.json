@@ -1,0 +1,11 @@
+{
+  "name": "MI-449-html-multiple-pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ConnorGunderson/MI-449-html-multiple-pages.git",
+  "author": "Connor Gunderson <gundydev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}

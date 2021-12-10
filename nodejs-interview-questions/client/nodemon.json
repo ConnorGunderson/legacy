@@ -1,0 +1,5 @@
+{
+	"watch": ["graphql"],
+	"exec": "npm run graphql",
+	"ext": "graphql"
+}

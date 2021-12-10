@@ -1,0 +1,10 @@
+query Order($id: String!) {
+	order(where: { id: $id }) {
+		id
+    email
+    subtotal
+    tax
+    total
+    created
+	}
+}

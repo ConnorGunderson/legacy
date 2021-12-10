@@ -1,0 +1,99 @@
+:root {
+    /* Teal */
+    --custom-color-01:#8deeff;
+    /* Light teal */
+    --custom-color-02:rgb(234, 251, 255);
+    /* Grey 01 */
+    --custom-color-03:#757575;
+}
+/* Globals */
+html,
+body {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background: linear-gradient(#00d9ff,#c9fff1);
+}
+
+li {
+    list-style: none;
+    font-size: 2rem;
+    color: var(--custom-color-03);
+}
+
+input {
+    padding: 1rem;
+    border: none;
+    font-size: 2rem;
+}
+
+span {
+    width: 0;
+    text-align: center;
+    color: white;
+    background: #e74c3c;
+    display: inline-block;
+    margin-right: 2rem;
+    transition: width .2s ease;
+    opacity: 0;
+}
+
+
+li:hover span {
+    width: 6rem;
+    opacity: 1;
+}
+
+/* Secondaries */
+#mainContentBox {
+    position: relative;
+    width:40rem;
+    top:8rem;
+    background-color: var(--custom-color-02);
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .4);
+    -moz-transition: box-shadow 1s ease-in-out;
+    -webkit-transition: box-shadow 1s ease-in-out;
+    transition: box-shadow 1s ease-in-out;
+}
+
+#mainContentBox:hover {
+    box-shadow: 0 0 3rem rgba(0, 0, 0, .45);
+}
+
+.fa-plus {
+    position: relative;
+    transition: transform 1s ease-in;
+}
+
+.fa-plus:hover {
+    transform: rotate(360deg);
+    color: var(--custom-color-01);
+}
+
+
+
+/* In-line custom CSS */
+.bg-teal {
+    background-color: var(--custom-color-01);
+}
+
+.bg-lteal {
+    background-color: var(--custom-color-02);
+}
+
+.text-teal {
+    color: var(--custom-color-01);
+}
+
+.text-lteal {
+    color: var(--custom-color-02);
+}
+
+.text-lgrey {
+    color: var(--custom-color-03);
+}

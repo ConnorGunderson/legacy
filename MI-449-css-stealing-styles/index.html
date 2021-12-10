@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Stealing Styles</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="main">
+      <header>
+        <h1>
+          <span>S</span>
+          <span>e</span>
+          <span>a</span>
+          <span>r</span>
+          <span>c</span>
+          <span>h</span>
+          <span>.</span>
+          <span>i</span>
+          <span>o</span>
+        </h1>
+        <a id="auth">Sign In</a>
+      </header>
+      <section>
+        <div>
+          <input type="text" name="search" placeholder="Search something..." />
+        </div>
+        <a>Search</a>
+      </section>
+      <script type="application/javascript">
+        const colors = ['#98c379', '#c6ad00', '#b400b9', '#56b6c2', '#c62d48'];
+        Object.values(document.querySelectorAll('span')).map((elem) => {
+          elem.addEventListener('mouseenter', (evt) => {
+            evt.target.style.color =
+              colors[Math.floor(Math.random() * Math.floor(5))];
+          });
+          elem.addEventListener('mouseleave', (evt) => {
+            evt.target.style.color = 'black';
+          });
+        });
+      </script>
+    </div>
+  </body>
+</html>

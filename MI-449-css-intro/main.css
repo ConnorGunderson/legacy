@@ -1,0 +1,51 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+  position: relative;
+  scroll-behavior: smooth;
+  background-color: #6aceec;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+span {
+  font-size: 18px;
+  padding-left: 5px;
+  font-weight: normal;
+}
+
+.container > section, header{
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+h1, .tagline {
+  text-align: center;
+}
+
+h2 {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #dbb28e;
+}
+
+img {
+  height: 60px;
+  padding: 5px;
+}
+
+a {
+  color: purple;
+  transition: color 150ms linear;
+}
+
+a:hover {
+  color:orange;
+  text-decoration: underline;
+}
